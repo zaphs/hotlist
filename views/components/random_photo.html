@@ -1,0 +1,63 @@
+
+{script}
+{literal}
+$(document).ready(function(){
+
+$('#hotphoto_sex_select').change(function(){
+
+    window.location.href='{/literal}{$hotphoto_url}{literal}'+this.value;
+
+});
+
+});
+{/literal}
+{/script}
+{style}
+{literal}
+    .photo_preview_image
+    {
+        padding: 5px; 
+        width: 510px;
+    }
+    .photo_preview_image img
+    {
+        height: auto;
+        width: 500px;
+    }
+{/literal}
+{/style}
+
+{block_decorator name='box_cap' iconClass='ow_ic_star' label=$label}{/block_decorator}
+{block_decorator name='box' addClass='ow_stdmargin ow_center'}        
+<div class="clearfix"> 
+    <div class="ow_stdmargin" style="text-align: right">
+        {text key='hotphoto+select_sex'}
+        <select name="hotphoto_sex_select" id="hotphoto_sex_select">
+            <option value='0'>{text key="hotphoto+sex_all"}</option>
+            {foreach from=$allSex item='sex'}
+            <option value='{$sex.value}' {if $selectedSex==$sex.value}selected="selected"{/if}>{$sex.name}</option>
+            {/foreach}
+        </select>
+    </div>
+    
+    <div class="ow_std_margin nophotos" style="{if $no_photos}display: block;{else}display: none;{/if}">
+        {text key='hotphoto+no_photos'}
+    </div>
+    
+    {if !$no_photos}
+    <div class="ow_left ow_wide hotphoto_preview">
+        <div class="ow_stdmargin ow_alt2 photo_preview_image">
+            <img src="{$url}" />
+        </div>
+    </div>
+    <div class="ow_right ow_narrow hotphoto_preview">
+        {$rate}
+        <div>
+            {decorator name="button" langLabel='hotphoto+next' buttonName='refresh' id='hotphoto_refresh' }
+        </div>               
+    </div>
+    {/if}
+</div>    
+ 
+{/block_decorator}
+

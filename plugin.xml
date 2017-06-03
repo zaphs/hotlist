@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugin>
+	<name>Hot Or Not</name>
+	<key>hotphoto</key>
+	<description>Allow users rate photos at one place! (Plugin "Photo" is required)</description>
+    <author>Zarif Safiullin</author>
+    <authorEmail>zaph.saph@gmail.com</authorEmail>
+	<authorUrl>http://www.oxwall.org/user/zaph</authorUrl>
+	<developerKey>21feed2fc03658ea012bf3eb6903c84a</developerKey>
+    <build>6</build>
+    <copyright>(C) 2011 Zarif Safiullin. All rights reserved.</copyright>
+	<license>The BSD License</license>
+    <licenseUrl>http://www.opensource.org/licenses/bsd-license.php</licenseUrl>
+</plugin>
