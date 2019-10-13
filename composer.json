@@ -1,0 +1,12 @@
+{
+  "name": "wallox/hotornot",
+  "description": "Allow users rate photos at one place! (Plugin Photo is required)",
+  "type": "library",
+  "license": "BSD-4-Clause",
+  "authors": [
+    {
+      "name": "Zarif Safiullin",
+      "email": "zaph.work@gmail.com"
+    }
+  ]
+}
