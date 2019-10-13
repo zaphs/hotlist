@@ -1,7 +1,7 @@
 {
   "name": "wallox/hotornot",
   "description": "Allow users rate photos at one place! (Plugin Photo is required)",
-  "type": "library",
+  "type": "oxwall-plugin",
   "license": "BSD-4-Clause",
   "authors": [
     {
