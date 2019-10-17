@@ -10,9 +10,7 @@
     }
   ],
   "require": {
-    "wallox/installers": "dev-master"
-  },
-  "extra": {
-    "class": "Wallox\\Installers\\Plugin"
+    "composer/installers": "~1.0",
+    "composer-plugin-api": "^1.0"
   }
 }
