@@ -16,6 +16,6 @@
     }
   ],
   "require": {
-    "wallox/installers": "dev-master",
-  },
+    "wallox/installers": "dev-master"
+  }
 }
