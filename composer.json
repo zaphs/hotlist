@@ -1,4 +1,10 @@
 {
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:zaphs/installers.git"
+    }
+  ],
   "name": "wallox/hotornot",
   "description": "Allow users rate photos at one place! (Plugin Photo is required)",
   "type": "oxwall-plugin",
@@ -8,5 +14,8 @@
       "name": "Zarif Safiullin",
       "email": "zaph.work@gmail.com"
     }
-  ]
+  ],
+  "require": {
+    "wallox/installers": "dev-master",
+  },
 }
