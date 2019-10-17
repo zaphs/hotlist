@@ -11,5 +11,8 @@
   ],
   "require": {
     "wallox/installers": "dev-master"
+  },
+  "extra": {
+    "class": "Wallox\\Installers\\Plugin"
   }
 }
